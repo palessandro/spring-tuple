@@ -1,0 +1,10 @@
+addons:
+  artifacts:
+    debug: true
+    paths: [libs.zip, build.zip, testbuild.zip]
+    target_paths: 4a3f7835-9663-4ab8-a4a3-ff2a4af94a95
+jdk: [oraclejdk8]
+language: java
+script: [mvn install, ./df-build.sh]
+sudo: 'false'
+# Modified by Insights Service at 2016-04-10 13:42:52.026906
